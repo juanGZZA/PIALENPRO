@@ -8,12 +8,11 @@
 }
 
 body{
-    min-height: 90vh;
+    min-height: 85vh;
     background: url(../img/fondo.png) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    margin-top: -20px;
 }
 
 header{
@@ -51,99 +50,49 @@ header .navbar ul li a:hover{
     color: #ffffff;
 }
 
-
-header .navbar ul li ul li{
-    width: 100%;
-    border-top: 0px solid rgba(0, 0, 0, 0.1);
-}
-
-
 #menu{
-    margin-top: 70px;
+    margin-top: 95px;
     display: flex;
     z-index: 1;
-}
-
-
-#col1, #col2, #col3{
-    display: inline-block;
-    width: 400px;
-    height: 80vh;
-    margin-top: 2.5%;
-    z-index: 1;
-    margin-left: 5%;
-}
-
-
-.tarea1, .tarea2, .tarea3,  .tarea4{
-    width: 400px;
-    height: 17vh;
-    background-color: aliceblue;
-    margin-bottom: 6.9%;
-}
-
-
-#navbar a{
-    color: azure;
-    z-index: 1;
-    margin-left: 20px;
-}
-
-#menu div a{
-    text-align: center;
     justify-content: center;
-    text-decoration: none;
-    color: brown;
 }
 
-#menu div a div{
-    background-color: rgb(223, 184, 127);
+#menu a div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#menu div .linkmenu1:hover div{
+
+#menu a #bio{
+    width: 300px;
+    height: 75vh;
+    background-image: url(../img/fondoBio.jpg);
+}
+
+#menu a:hover #bio{
     transform: scale(1.1);
-    background-color: rgb(60, 160, 85);
 }
 
-#menu div .linkmenu1:hover div p.txtabajo1{
-    opacity: 1;
-    margin-top: -65px !important;
-    color: white;
+#espacio{
+    width: 100px;
 }
 
-#menu div .linkmenu2:hover div{
+#menu a #pasat{
+    width: 300px;
+    height: 75vh;
+    background-image: url(../img/FondoPasatiempos.jpg);
+}
+
+#menu a:hover #pasat{
     transform: scale(1.1);
-    background-color: rgb(154, 41, 41);
-}
-
-#menu div .linkmenu2:hover div p.txtabajo2{
-    opacity: 1;
-    margin-top: -65px !important;
-    color: white;
-}
-
-#menu div a:hover div > p{
-    opacity: 0;
-}
-
-.txtabajo1, .txtabajo2{
-    opacity: 0;
-}
-
-.txtarriba{
-    display: inline;
-    opacity: 1;
-}
-
-p{
-    padding-top: 50px;
 }
 
 footer{
     background-color: rgb(130, 81, 6);
     width: 100%;
     height: 60px;
-    margin-top: 3px;
+    margin-top: 29px;
     text-align: center;
     position: fixed;
     z-index: 1;
@@ -172,9 +121,3 @@ footer ul li a{
 footer ul li a:hover{
     box-shadow: inset 0 0 0 50px #117302;
 }
-
-
-
-
-
-
