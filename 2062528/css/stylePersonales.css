@@ -8,11 +8,28 @@
 }
 
 body{
-    min-height: 85vh;
+    min-height: 100vh;
     background: url(../img/fondo.png) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    text-align: center;
+    background-color: rgb(137, 115, 83);
+    padding: 25px 0 10px 0;
+    margin-top: 10px;
+}
+
+#Bio{
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 header{
@@ -51,6 +68,7 @@ header .navbar ul li a:hover{
 }
 
 #menu{
+    height: 79vh;
     margin-top: 95px;
     display: flex;
     z-index: 1;
@@ -63,11 +81,15 @@ header .navbar ul li a:hover{
     justify-content: center;
 }
 
-
 #menu a #bio{
     width: 300px;
     height: 75vh;
     background-image: url(../img/fondoBio.jpg);
+}
+
+#menu a div p{
+    background-color: black;
+    color: white;
 }
 
 #menu a:hover #bio{
@@ -91,11 +113,9 @@ header .navbar ul li a:hover{
 footer{
     background-color: rgb(130, 81, 6);
     width: 100%;
-    height: 60px;
-    margin-top: 29px;
     text-align: center;
-    position: fixed;
     z-index: 1;
+    align-self: self-end;
 }
 
 footer ul li{
@@ -120,4 +140,68 @@ footer ul li a{
 
 footer ul li a:hover{
     box-shadow: inset 0 0 0 50px #117302;
+}
+
+#fondo{
+    width: 70%;
+    background-color: rgb(181, 162, 136);
+    height: 100%;
+    margin-top: 5.2%;
+}
+
+#fondo h1{
+    text-align: center;
+    padding: 10px;
+}
+
+#bloque1 p{
+    width: 60%;
+    margin: 10px 0 0 30px;
+    text-align: center;
+}
+
+#bloque1{
+    background-color: rgb(137, 115, 83);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bloque1 img{
+    width: 250px;
+    margin: 30px;
+}
+
+#bloque2{
+    background-color: rgb(137, 115, 83);
+    text-align: center;
+    padding: 0;
+}
+
+#bloque2 p{
+    padding: 0 10px 10px 10px;
+}
+
+#carrusel{
+    aspect-ratio: 16/10;
+    width: 600px;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+#medio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carrusel img{
+    width: 100%;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align: center;
 }
