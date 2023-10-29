@@ -15,52 +15,185 @@
             </ul>
         </nav>
     </header>
-    <div id="fondo">
-        <h1>Biografia</h1>
-        <h3>Introducción</h3>
-        <div id="bloque1">
-            <p>
-                Mi nombre es Juan Pablo Gonzalez Antonio, nací el 30 de Marzo del 2005 a las 12 de la mañana, soy de Santa Catarina Nuevo León pero mis
-                padres son originarios de San Luis Potosí, tengo 2 hermanos, Bianca de 28 años y Jesús de 27 años los dos son ingenieros civiles.
-                Actualmente soy estudiante de 3<sup>er</sup> semestre de ingeniería en software en la Facultad de Ingeniería Mecánica y Eléctria
-                de la UANL
-            </p>
-            <img src="img/img1.jpg" alt="Yo con mi papá">
-        </div>
-        <h3>Infancia</h3>
-        <div id="bloque2">
-            <p>
-                Asistí al Kinder Rositas de Chanel, del cual no tengo muchos recuerdos, después entré a la escuela primaria General Mariano Escobedo, estuve en el equipo
-                de futbol de la escuela, fuí a un torneo y quedé en segundo lugar junto con mis compañeros. <br> Durante mi estancia en la escuela fuí a kidzania por primera 
-                vez, en esa primaria estuve hasta 4to año de primaria, ya que durante ese año me hablaron de una escuela para niños "inteligentes", la cual está
-                asociada a un programa llamada Programa Curricular avanzado, en este estuve hasta 6to año de primaria, este programa se ubicaba en la escuela 1<sup>ro</sup>
-                de Mayo, la cual estaba más cerca de mi casa. <br>
-                En este programa llevaba materias extras a las que se veían en una escuela normal, ya que llevaba robótica, programación y energías alternativas. <br>
-                En la materia de robótica hacía maquetas con máquinas simples, en la materia de programación llevé un programa llamado Scratch, el cual te enseña a 
-                programa por medio de bloques, lo cual me ayudó mucho en formación de lógica, la cual hoy en día siento que la tengo muy bien desarrollada, aunque para
-                este momento aún no tenía claro de si quería estudiar programación, en esta materia solo desarrollé un proyecto el cual fue hacer un serpientes y
-                escaleras, mientras que en la materia de energías alternativas, veía distintas formas de generar electricidad que no sea mediante la forma tradicional,
-                realicé varios proyectos sobre esto, como una planta eólica, en la cual prendíamos un led mediante el uso del viento.
-            </p>
-            <div id="medio">
-                <div id="carrusel">
-                    <img src="img/img2.jpg" alt="">
-                    <img src="img/img3.jpg" alt="">
-                    <img src="img/img4.jpg" alt="">
-                    <img src="img/img5.jpg" alt="">
-                    <img src="img/img6.jpg" alt="">
-                </div>
-            </div>
-        </div>
-        <div id="bloque3">
-            <h3>Adolesencia</h3>
-        </div>
-    </div>
+
+    <div class="book">
+		<input type="checkbox" id="c1">
+		<input type="checkbox" id="c2">
+		<input type="checkbox" id="c3">
+        <input type="checkbox" id="c4">
+        <input type="checkbox" id="c5">
+        <input type="checkbox" id="c6">
+        <input type="checkbox" id="c7">
+        <input type="checkbox" id="c8">
+		<div id="cover"><img src="img/fondoBio.jpg"></div>
+		<div class="flip-book">
+			<div class="flip" id="p1">
+				<div class="back">
+					<img src="img/img1.jpg">
+					<label class="back-btn" for="c1">Atras</label>
+				</div>
+				<div class="front">
+					<h2>índice</h2>
+                    <ul>
+                        <li>¿Quién soy?</li>
+                        <li>Infancia</li>
+                        <li>Adolescencia</li>
+                        <li>Olimpiadas de física</li>
+                        <li>Prepa</li>
+                        <li>Competenencias de robótica</li>
+                        <li>Universidad</li>
+                    </ul>
+					<label class="next-btn" for="c1">Siguiente</label>
+				</div>
+			</div>
+			<div class="flip" id="p2">
+				<div class="back">
+					<img src="img/img6.jpg">
+					<label class="back-btn" for="c2">Atras</label>
+				</div>
+				<div class="front">
+					<h2>¿Quién soy?</h2>
+                    <p>
+                        Soy Juan Pablo Gonzalez Antonio, nací el 30 de marzo del 2005 en Santa Catarina Nuevo León, mis padres son originarios de
+                        San Luis Potosí y vinieron a vivir aquí desde muy Jovenes. Soy el menor de 3 hermanos de nombres Bianca de 28 años y Jesus
+                        de 27 años, actualmente los dos son egresados de ingenie civil en la FIC, mientras que yo soy estudiante de la FIME en la
+                        carrera de ITS.
+                    </p>
+                    <div class="slider">
+                        <ul>
+                            <li>
+                                <img src="img/img2.jpg">
+                            </li>
+                            <li>
+                                <img src="img/img3.jpg">
+                            </li>
+                            <li>
+                                <img src="img/img4.jpg">
+                            </li>
+                            <li>
+                                <img src="img/img5.jpg">
+                            </li>
+                        </ul>
+                    </div>
+					<label class="next-btn" for="c2">Siguiente</label>
+				</div>
+			</div>
+            <div class="flip" id="p3">
+				<div class="back">
+					<img src="img/img8.jpg">
+					<label class="back-btn" for="c3">Atras</label>
+				</div>
+				<div class="front">
+					<h2>Infancia</h2>
+                    <p>
+                        Asistí al Kinder Rositas de Chanel, del cual no tengo muchos recuerdos, después entré a la escuela primaria General Mariano 
+                        Escobedo, estuve en el equipo de futbol de la escuela, fuí a un torneo y quedé en segundo lugar junto con mis compañeros, 
+                        durante mi estancia en la escuela fuí a kidzania por primera vez.
+                        En esa primaria estuve hasta 4to año de primaria, ya que durante ese año me hablaron de una escuela para niños "inteligentes"
+                        la cual está asociada a un programa llamada Programa Curricular avanzado.
+                        En este programa llevaba materias extras a las que se veían en una escuela normal, ya que llevaba robótica, programación y energías alternativas.
+                        En la materia de robótica hacía maquetas con máquinas simples, en la materia de programación llevé un programa llamado Scratch, el cual te enseña a 
+                        programa por medio de bloques, lo cual me ayudó mucho en formación de lógica, la cual hoy en día siento que la tengo muy bien desarrollada, aunque para
+                        este momento aún no tenía claro de si quería estudiar programación, en esta materia solo desarrollé un proyecto el cual fue hacer un serpientes y
+                        escaleras
+                    </p>
+					<label class="next-btn" for="c3">Siguiente</label>
+				</div>
+			</div>
+            <div class="flip" id="p4">
+				<div class="back">
+					<img src="img/img7.jpg">
+					<label class="back-btn" for="c4">Atras</label>
+				</div>
+				<div class="front">
+					<h2>Adolescencia</h2>
+                    <p>
+                        La adolescencia fue la etapa que más disfruté y estoy disfrutando, ya que en esta etapa me relacioné con mis amigos actuales y 
+                        participé en muchas actividades las cuales son muy de mi agrado, aunque el comienzo de esta no fue tan bueno, ya que En primer año
+                        de secundaria me iba muy mal en calificaciones, en la secundaria seguí en el mismo programa en el cual entré cuando estaba en la
+                        primara, las bajas calificaciones hicieron que me desanimara ya que no encontraba alguna actividad que me apasionara; así me sentí
+                        durante todo primer año de secundaria hasta que en segundo de secundaria pasó el primer evento que empezaría a cambiar mi vida.
+                    </p>
+					<label class="next-btn" for="c4">Siguiente</label>
+				</div>
+			</div>
+            <div class="flip" id="p5">
+				<div class="back">
+					<img src="img/img9.jpg">
+					<label class="back-btn" for="c5">Atras</label>
+				</div>
+				<div class="front">
+					<h2>Olimpiadas de física</h2>
+                    <p>
+                        Un día cualquiera de segundo de secundaria mi profe de física llegó con un anuncio que cambiaria mi vida por completo.
+                        "Muchachos, en la FCFM darán cursos de física gratis para el que quiera asistir.", en ese momento pensé que solo se trataba
+                        de clases normales, así que decidí ir ya que no me consideraba bueno en esa materia. Las clases eran semanales y yo fui
+                        a todas, hasta que un sábado las maestras llegaron con un anuncio, La Olimpiada estatal de física sería la siguiente semana.
+                        Mis compañeros y yo nos quedamos confudidos ya que a nosotros no nos habían hablado de esto; en ese momento nos dijeron 
+                        que las clases eran un entrenamiento para este examen que se hace en todos los estados de la republica, la semana del examen
+                        llegó y asistieron muchos alumnos de distintas secundarias, mientras que de la mía solo éramos 4, en ese examen se
+                        seleccionaron a 30 alumnos de Nuevo León para entrenarlos para presentar el examen Nacional de Física. En las primeras
+                        participaciones que hice nunca llegué a ese examen, hasta en mi última oportunidad, en donde logré conseguir una mención
+                        honorífica a nivel nacional. 
+                    </p>
+					<label class="next-btn" for="c5">Siguiente</label>
+				</div>
+			</div>
+            <div class="flip" id="p6">
+				<div class="back">
+					<img src="img/img10.jpg">
+					<label class="back-btn" for="c6">Atras</label>
+				</div>
+				<div class="front">
+					<h2>Prepa</h2>
+                    <p>
+                        La prepa ha sido la etapa que menos me ha gustado, ya que entré cuando era pandemia y era dificil hacer amigos, en esta 
+                        etapa solo hice como 10 amigos de los cuales sigo hablando con 3 o 4. Otra razón por la cual no me gustó fue que tuve una
+                        relación, la cual no terminó muy bien porque se alejó sin decirme nada, las cosas que me gustaron de esta etapa, fueron 3.
+                        Cuando obtuve mi mención honorífica estaba en la prepa y participé en torneos de robótica.
+                    </p>
+					<label class="next-btn" for="c6">Siguiente</label>
+				</div>
+			</div>
+            <div class="flip" id="p7">
+				<div class="back">
+					<img src="img/img11.jpg">
+					<label class="back-btn" for="c7">Atras</label>
+				</div>
+				<div class="front">
+					<h2>Competencias de robótica</h2>
+                    <p>
+                        Estuve un tiempo de aproximadamente 2 años en una competencia de robótica llamda FIRST, la cual tenía como objetivo hacer
+                        un cambio social a través de la construcción de un robot, ya que en dicha competencia se premiaban los proyectos de impacto
+                        social, así que durante esta etapa de mi vida realicé varios proyectos de este tipo así como la construccón un robot.
+                        La primera interacción que tuve con esta competencia fue FTC, la cual es una versión miniatura de FRC, que es donde ya 
+                        se utilizan robots más sostificados, durante mi paso en esta competencia gané varios premios junto con mi equipo, el más
+                        importante que ganamos fue a la excelencia a la ingeniera
+                    </p>
+					<label class="next-btn" for="c7">Siguiente</label>
+				</div>
+			</div>
+			<div class="flip" id="p8">
+				<div class="back">
+					<label class="back-btn" for="c8">Atras</label>
+				</div>
+				<div class="front">
+					<h2>Universidad</h2>
+                    <p>
+                        Esta etapa ha sido la que más he disfrutado, ya que al fin pude concentrarme en lo que realmente quería, lo cual es la 
+                        programación, ya que es una actividad que me gusta mucho, también es mi favorita ya que he hecho muchos amigos, pero los que
+                        más aprecio son Linda, la cual es mi novia también, Diana, Greco y Borjas.
+                    </p>
+					<label class="next-btn" for="c8">Siguiente</label>
+				</div>
+			</div>
+		</div>
+	</div>
     <footer>
         <ul>
-            <li><a href="Index.html">Anterior</a></li>
-            <li><a href="Index.html">Superior</a></li>
-            <li><a href="tarea1.html">Siguiente</a></li>
+            <li><a href="menuPersonales.html">Anterior</a></li>
+            <li><a href="menuPersonales.html">Superior</a></li>
+            <li><a href="Pasat.html">Siguiente</a></li>
         </ul>
     </footer>
 </body>

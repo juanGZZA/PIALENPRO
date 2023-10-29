@@ -30,5 +30,284 @@
             </ul>
         </nav>
     </header>
+    <div id="tarea5-10">
+        <div class="instruccion">
+            <h1>Tarea 5-10:</h1>
+            De los lenguajes Prolog, Python, Haskell, r, PHP, SQL investigar:
+            <ul> 
+                <li>Simbolos, sintaxis, esqueletos de los programas</li>
+                <li>Aplicación a descargar para editar y ejecutar</li>
+                <li>A que tipo de paradigma pertenece</li>
+                <li>Un ejemplo de un programa en ese lenguaje</li>
+            </ul>
+        </div>
+        <section class="container">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <div id="slide-1">
+                        <h1>Prolog</h1>
+                        <div class="simbolos">
+                            <table>
+                                <th>Simbolos</th>
+                                <tbody>
+                                    <tr>
+                                        <td>Operador</td>
+                                        <td>Sigificado</td>
+                                    </tr>
+                                    <tr>
+                                        <td>is</td>
+                                        <td>unificación</td>
+                                    </tr>
+                                    <tr>
+                                        <td>=:=</td>
+                                        <td>Igualdad</td>
+                                    </tr>
+                                    <tr>
+                                        <td>=/=</td>
+                                        <td>Desigualdad</td>
+                                    </tr>
+                                    <tr>
+                                        <td>></td>
+                                        <td>Mayor que</td>
+                                    </tr>
+                                    <tr>
+                                        <td><</td>
+                                        <td>Menor que</td>
+                                    </tr>
+                                    <tr>
+                                        <td>>=</td>
+                                        <td>Mayor o igual que</td>
+                                    </tr>
+                                    <tr>
+                                        <td><=</td>
+                                        <td>Igual o menor que</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="sintaxis">
+                            <h2>reglas de Sintaxis de prolog</h2>
+                            <ul>
+                                <li>Variables. Las variables en PROLOG deben de iniciar con letra mayúscula para poder identificarla, es decir es correcto usar la variable “Variable”, pero incorrecto definirla como “variable”.</li>
+                                <li>Constantes. Los datos constantes deben de iniciar su definición con minúscula, para que pueda ser identificada como tal. Es correcto definir una constante como “constante”, pero incorrecto definirla como “Constante”.</li>
+                                <li>Afirmación. Cada afirmación debe ser terminada por medio de un punto, esto indicará al lenguaje la finalización de cada sentencia, y obviamente, la posibilidad de comenzar una nueva sentencia.</li>
+                                <li>NO usar nombres compuestos separados por espacio para nombrar constantes, variables, predicados, reglas, etc. , es incorrecto definir un nombre llamado “somos ingenieros”, pero es correcto definirlo como “somos_ingenieros”.</li>
+                                <li>Comentarios. Podemos comentar el software por medio del símbolo reservado “%”, cada que se coloque dicho símbolo, PROLOG entenderá que los enunciados posteriores a él, serán solo comentarios y no los tomará en cuenta para la lectura y ejecución del programa realizado.</li>
+                            </ul>
+                        </div>
+                        <div class="apliparaejpro">
+                            <h2>Aplicación, paradigma, esqueleto y ejemplo de prolog</h2>
+                            <p>La aplicación que se usa para correr prolog es conocida como: SWI Prolog. Prolog pertenece a los paradigmas lógicos.</p>
+                            <h2>Esqueleto básico</h2>
+                                <p>% Hechos <br>
+                                    % Define hechos y relaciones iniciales <br><br>
+                                    
+                                    % Reglas <br>
+                                    % Define reglas y relaciones lógicas <br><br>
+                                    
+                                    % Consultas <br>
+                                    % Realiza consultas para obtener respuestas <br><br>
+                                    
+                                    % Ejemplo de hecho y regla: <br><br>
+                                    
+                                    hombre(juan). <br>
+                                    mujer(maria). <br> <br>
+                                    padre(juan, maria). <br>
+                                    madre(maria, juan). <br><br>
+                                    
+                                    hermano(X, Y) :- padre(Z, X), padre(Z, Y), X \= Y. <br>
+                                    
+                                    % Ejemplo de consulta: <br><br>
+                                    
+                                    ?- hermano(juan, maria).
+                                    </p>
+                            <h3>Ejemplo de codigo en prolog</h3>
+                            <code class="ejemplos">my_sum_num(A, B, C):-</code> 
+                            <code class="ejemplos">C is A + B.</code>
+                        </div>
+                    </div>
+                    <div id="slide-2">
+                        <h1>Python</h1>
+                        <div class="simbolos">
+                            <table>
+                                <thead>
+                                <tr>
+                                <th>Símbolo</th>
+                                <th>Significado</th>
+                                <th>Ejemplo</th>
+                                <th>Resultado</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                <td><code>+</code></td>
+                                <td>Suma</td>
+                                <td><code>a = 10 + 5</code></td>
+                                <td><code>a</code> es <code>15</code></td>
+                                </tr>
+                                <tr>
+                                <td><code>-</code></td>
+                                <td>Resta</td>
+                                <td><code>a = 12 - 7</code></td>
+                                <td><code>a</code> es <code>5</code></td>
+                                </tr>
+                                <tr>
+                                <td><code>-</code></td>
+                                <td>Negación</td>
+                                <td><code>a = -5</code></td>
+                                <td><code>a</code> es <code>-5</code></td>
+                                </tr>
+                                <tr>
+                                <td><code>*</code></td>
+                                <td>Multiplicación</td>
+                                <td><code>a = 7 * 5</code></td>
+                                <td><code>a</code> es <code>35</code></td>
+                                </tr>
+                                <tr>
+                                <td><code>**</code></td>
+                                <td>Exponente</td>
+                                <td><code>a = 2 ** 3</code></td>
+                                <td><code>a</code> es <code>8</code></td>
+                                </tr>
+                                <tr>
+                                <td><code>/</code></td>
+                                <td>División</td>
+                                <td><code>a = 12.5 / 2</code></td>
+                                <td><code>a</code> es <code>6.25</code></td>
+                                </tr>
+                                <tr>
+                                <td><code>//</code></td>
+                                <td>División entera</td>
+                                <td><code>a = 12.5 / 2</code></td>
+                                <td><code>a</code> es <code>6.0</code></td>
+                                </tr>
+                                <tr>
+                                <td><code>%</code></td>
+                                <td>Módulo</td>
+                                <td><code>a = 27 % 4</code></td>
+                                <td><code>a</code> es <code>3</code></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="sintaxis">
+                            <h2>Sintaxis básica de python</h2>
+                            <p>
+                                # Definimos una variable x con una cadena <br>
+                                x = "El valor de (a+b)*c es" <br> <br>
+
+                                # Podemos realizar múltiples asignaciones <br>
+                                a, b, c = 4, 3, 2 <br><br>
+
+                                # Realizamos unas operaciones con a,b,c <br>
+                                d = (a + b) * c <br><br>
+
+                                # Definimos una variable booleana <br>
+                                imprimir = True <br><br>
+
+                                # Si imprimir, print() <br>
+                                if imprimir: <br>
+                                    print(x, d) <br>
+
+                                # Salida: El valor de (a+b)*c es 14 <br><br>
+                                # Esto es un comentario en Python
+                            </p>
+                        </div>
+                        <div class="apliparaejpy">
+                            <h2>Aplicación, Paradigma, esqueleto Y Ejemplo de codigo de python</h2>
+                            <p>
+                                La aplicación para ejecutar códigos de python se llama PyCharm aunque también se puede utilizar VisualStudio Code. Python pertenece al 
+                                paradigma imperativo y orientado a objetos
+                            </p>
+                            <h2>Esqueleto de python</h2>
+                            <code class="ejemplos">
+                                #import librerías <br>
+                                def funcion <br>
+                                cuerpo de la funcion <br>
+                                return retorno de la funcion
+                            </code>
+                            <h2>Suma de dos numero en python</h2>
+                            <code class="ejemplos">
+                                n1 = input("¿Dime el primer número?") <br>
+                                n2 = input("¿Dime el segundo número?") <br>
+                                print (n1+n2)
+                            </code>
+                        </div>
+                    </div>
+                    <div id="slide-3">
+                        <h1>Haskell</h1>
+                        <h2>Simbolos de haskell</h2>
+                        <div class="simbolos">
+                            <img src="img/haskell simbolos.jpg" alt="">
+                        </div>
+                        <div class="sintaxis">
+                            <h2>Sintaxis básica de Haskell</h2>
+                            <p>
+                                -Este es un comentario en haskell- <br>
+                                "Esto es una cadena en haskell" <br>
+                                1 es un numero entero <br>
+                                1.1 es un numero flotante <br>
+                                0O1 es un numero octal <br>
+                                A2B es un numero hexadecimal <br>
+                                funcion parametro = parametro + 2 <br>
+                            </p>
+                        </div>
+                        <div class="apliparaejhas">
+                            <h2>Aplicación, paradigma, esqueleto y ejemplo de Haskell</h2>
+                            <p>La aplicacion que utiliza haskell se llama GHC, haskell pertenece a los paradigmas Funcional, no estricto, modular, fuertemente tipificado</p>
+                            <h2>Esqueleto de haskell y ejemplo de codigo</h2>
+                            <code class="ejemplos">
+                                module Main where <br>
+                                addition a b = a + b main :: IO ()  <br>
+                                main = do let z = addition 5 3 <br>
+                                putStrLn $ "The result is: " ++ show z
+                            </code>
+                        </div>
+                    </div>
+                    <div id="slide-4">
+                        <h1>R</h1>
+                        <h2>Simbolos en R</h2>
+                        <div class="simbolos">
+                            <img src="img/simbolosR.png" alt="">
+                            <img src="img/simbolosR2.png" alt="">
+                        </div>
+                        <div class="sintaxis">
+                            <ul>
+                                <li>No se tienen en cuenta los espacios en blancos: podemos o no dejar espacios para que el código se puede ordenar de forma adecuada y poder entenderse.</li>
+                                <li>Se distinguen las mayúsculas y minúsculas: para variables en el código, podemos crear diferentes variables con nombres iguales pero alternando mayúsculas y minúsculas.</li>
+                                <li>Se pueden incluir comentarios: como vimos anteriormente los comentarios se utilizan para añadir información en el código.</li>
+                                <li>No es necesario terminar cada sentencia con el carácter de punto y coma (;): en la mayoría de lenguajes de programación, es obligatorio terminar cada sentencia con este carácter. En en cambio R podemos o no terminar de esta forma.</li>
+                                <li>Lenguaje orientado a objetos: todo en R son objetos, las variables, datos, funciones y resultados, que se generan en R son objetos estos se modifican o manipulan con operadores o funciones (que a su vez son objetos).</li>
+                            </ul>
+                        </div>
+                        <div class="apliparaejR">
+                            <h2>Aplicación, paradigma, esqueleto y ejemplo de R</h2>
+                            <p>La aplicación que se utiliza para correr codigo R se llama R Studio, R pertenece al paradigma declarativo procedimental</p>
+                            <h2>Esqueleto en R y codigo de ejemplo</h2>
+                            <code class="ejemplos">
+                                superfRect=function(base,altura){ <br>
+                                    S=base*altura <br>
+                                    return(S) <br>
+                                   }
+                            </code>
+                        </div>
+                    </div>
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                    <a href="#slide-4"></a>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <ul>
+            <li><a href="tarea4.html">Anterior</a></li>
+            <li><a href="menuTareas.html">Superior</a></li>
+            <li><a href="tarea5-10.html">Siguiente</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
